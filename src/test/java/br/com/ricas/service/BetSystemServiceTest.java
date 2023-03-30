@@ -1,6 +1,9 @@
-package br.com.ricas.domain;
+package br.com.ricas.service;
 
-import br.com.ricas.domain.model.*;
+import br.com.ricas.domain.model.Bettor;
+import br.com.ricas.domain.model.Match;
+import br.com.ricas.domain.model.MatchResult;
+import br.com.ricas.domain.model.Team;
 import br.com.ricas.domain.service.BetSystemService;
 import br.com.ricas.domain.service.ExtractScoreService;
 import br.com.ricas.domain.service.ScoreCalculatorService;
@@ -16,8 +19,9 @@ import org.junit.jupiter.api.TestInstance;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
+
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
-public class BetTest {
+public class BetSystemServiceTest {
 
     ScoreCalculatorService scoreCalculatorService;
     ExtractScoreService extractScoreService;
@@ -30,7 +34,7 @@ public class BetTest {
     }
 
     @Test
-    public void shouldCreateGameSuccessfully() {
+    public void shouldExecuteWithoutError() {
 
         Bettor bettorA = new Bettor("Ricardo", "2-3"); // 10
         Bettor bettorB = new Bettor("Marcelo", "4-4"); // 0

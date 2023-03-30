@@ -1,4 +1,4 @@
-package br.com.ricas;
+package br.com.ricas.application.web;
 
 import io.quarkus.test.junit.QuarkusTest;
 import org.junit.jupiter.api.Test;

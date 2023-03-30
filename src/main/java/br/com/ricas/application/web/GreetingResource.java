@@ -1,4 +1,4 @@
-package br.com.ricas;
+package br.com.ricas.application.web;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

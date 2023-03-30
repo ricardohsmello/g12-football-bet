@@ -3,6 +3,7 @@ package br.com.ricas.domain.service.impl;
 import br.com.ricas.domain.model.Bettor;
 import br.com.ricas.domain.model.MatchResult;
 import br.com.ricas.domain.model.ScoreBoard;
+import br.com.ricas.domain.service.BetSystemService;
 import br.com.ricas.domain.service.ExtractScoreService;
 import br.com.ricas.domain.service.ScoreCalculatorService;
 
@@ -12,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @ApplicationScoped
-public class BetSystemServiceImpl implements br.com.ricas.domain.service.BetSystemService {
+public class BetSystemServiceImpl implements BetSystemService {
     private final ScoreCalculatorService scoreCalculatorService;
     private final ExtractScoreService extractScoreService;
     private final List<ScoreBoard> scoreBoard = new ArrayList<>();

@@ -5,7 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f53f1b-c584-4b53-aa01-59c2fc9ddf10" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/BetSystemServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/ExtractScoreServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/ScoreCalculatorServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/classpath.index" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/GreetingResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/GreetingResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/BetSystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/BetSystemServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/native-test/java/br/com/ricas/GreetingResourceIT.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/native-test/java/br/com/ricas/GreetingResourceIT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ricas/GreetingResourceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/ricas/application/web/GreetingResourceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ricas/domain/BetTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ricas/domain/BettingSystemCalculatorTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +34,16 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -54,87 +82,19 @@
       <recent name="$PROJECT_DIR$/src/main/java/br/com/ricas/domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BetTest.shouldCreateGameSuccessfully">
-    <configuration name="BetTest.shouldCreateGameSuccessfully (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;br.com.ricas.domain.BetTest.shouldCreateGameSuccessfully&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BetTest.shouldCreateGameSuccessfully" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;BetTest.shouldCreateGameSuccessfully&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BettingSystemCalculatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;BettingSystemCalculatorTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="BetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in g12-football-bet.test (1)">
+    <configuration name="All in g12-football-bet.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="g12-football-bet.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.com.ricas.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.com.ricas.domain" />
-      <option name="MAIN_CLASS_NAME" value="br.com.ricas.domain.BetTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All in g12-football-bet.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g12-football-bet.test" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -155,13 +115,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ExtractScoreServiceTest.shouldExtractScoreSuccessfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g12-football-bet.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ricas.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.ricas.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ricas.service.ExtractScoreServiceTest" />
+      <option name="METHOD_NAME" value="shouldExtractScoreSuccessfully" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ScoreCalculatorServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="g12-football-bet.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.com.ricas.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.com.ricas.service" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ricas.service.ScoreCalculatorServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.All in g12-football-bet.test (1)" />
+        <item itemvalue="JUnit.All in g12-football-bet.test" />
+        <item itemvalue="JUnit.ExtractScoreServiceTest.shouldExtractScoreSuccessfully" />
+        <item itemvalue="JUnit.ScoreCalculatorServiceTest" />
         <item itemvalue="JUnit.BetTest.shouldCreateGameSuccessfully" />
-        <item itemvalue="JUnit.BetTest" />
-        <item itemvalue="Gradle.BetTest.shouldCreateGameSuccessfully (1)" />
-        <item itemvalue="Gradle.BetTest.shouldCreateGameSuccessfully" />
-        <item itemvalue="Gradle.BettingSystemCalculatorTest" />
       </list>
     </recent_temporary>
   </component>
