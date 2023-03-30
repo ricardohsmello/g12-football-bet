@@ -4,19 +4,15 @@ public class Bettor {
     private int id;
     private String name;
 
-    private String bet;
 
-    public Bettor(String name, String bet) {
+    public Bettor(int id, String name) {
+        this.id = id;
         this.name = name;
-        this.bet = bet;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getBet() {
-        return bet;
-    }
 
 }

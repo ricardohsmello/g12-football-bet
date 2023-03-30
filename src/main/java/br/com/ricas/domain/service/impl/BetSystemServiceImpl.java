@@ -11,6 +11,7 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 @ApplicationScoped
 public class BetSystemServiceImpl implements BetSystemService {
@@ -28,17 +29,17 @@ public class BetSystemServiceImpl implements BetSystemService {
     }
     @Override
     public void calculate(MatchResult matchResult) {
-        int[] matchScores = extractScoreService.extractScores(matchResult.getResult());
-
-        for (Bettor bettor : matchResult.getMatch().getBettors()) {
-            int[] betScores = extractScoreService.extractScores(bettor.getBet());
-            int points = scoreCalculatorService.calculatePoints(matchScores, betScores);
-            ScoreBoard score = new ScoreBoard(bettor, points);
-            scoreBoard.add(score);
-        }
-
-        for (ScoreBoard score : scoreBoard) {
-            System.out.println(String.format("%s made %d points", score.getBettor().getName(), score.getPoints()));
-        }
+//        int[] matchScores = extractScoreService.extractScores(matchResult.getResult());
+//
+//        for (Bettor bettor : matchResult.getMatch().getBettors()) {
+//            int[] betScores = extractScoreService.extractScores(bettor.getBet());
+//            int points = scoreCalculatorService.calculatePoints(matchScores, betScores);
+//            ScoreBoard score = new ScoreBoard(bettor, points);
+//            scoreBoard.add(score);
+//        }
+//
+//        for (ScoreBoard score : scoreBoard) {
+//            System.out.println(String.format("%s made %d points", score.getBettor().getName(), score.getPoints()));
+//        }
     }
 }

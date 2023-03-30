@@ -1,18 +1,25 @@
 package br.com.ricas.domain.model;
 
 import br.com.ricas.domain.util.MatchStatus;
+import br.com.ricas.infrastructure.entity.MatchEntity;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 public class Match {
-     private List<Team> teams;
+     private int id;
+     private Team teamA;
+     private Team teamB;
+
      private MatchStatus matchStatus;
      private LocalDateTime date;
-     private List<Bettor> bettors;
 
-    public void setTeams(List<Team> teams) {
-        this.teams = teams;
+     public Match(int id) {
+         this.id = id;
+     }
+
+    public void setMatchUp(Team teamA, Team teamB) {
+        this.teamA = teamA;
+        this.teamB = teamB;
     }
 
     public void setMatchStatus(MatchStatus matchStatus) {
@@ -23,11 +30,9 @@ public class Match {
         this.date = date;
     }
 
-    public void setBettors(List<Bettor> bettors) {
-        this.bettors = bettors;
-    }
-
-    public List<Bettor> getBettors() {
-        return bettors;
+    public MatchEntity toEntity() {
+        return new MatchEntity(
+                teamA.toEntity(), teamB.toEntity(), matchStatus.ordinal(), date
+        );
     }
 }

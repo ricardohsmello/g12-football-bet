@@ -22,7 +22,6 @@ import java.util.List;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class BetSystemServiceTest {
-
     ScoreCalculatorService scoreCalculatorService;
     ExtractScoreService extractScoreService;
     BetSystemService betSystemService;
@@ -36,36 +35,42 @@ public class BetSystemServiceTest {
     @Test
     public void shouldExecuteWithoutError() {
 
-        Bettor bettorA = new Bettor("Ricardo", "2-3"); // 10
-        Bettor bettorB = new Bettor("Marcelo", "4-4"); // 0
-        Bettor bettorC = new Bettor("Antonio", "2-2"); //0
-        Bettor bettorD = new Bettor("Braulio", "1-1");// 5
+        List<Bettor> bettors = getBettors();
+
+        Match match1 = new Match(1);
+        match1.setDate(LocalDateTime.of(2023, 4, 16, 16, 0));
+        match1.setMatchStatus(MatchStatus.OPEN);
+        match1.setMatchUp(new Team(TeamEnum.PALMEIRAS), new Team(TeamEnum.GREMIO));
+
+        Match match2 = new Match(2);
+        match2.setDate(LocalDateTime.of(2023, 4, 16, 16, 0));
+        match2.setMatchStatus(MatchStatus.OPEN);
+        match2.setMatchUp(new Team(TeamEnum.CORINTHIANS), new Team(TeamEnum.FLAMENGO));
+
+        MatchResult match1Result = new MatchResult();
+        match1Result.setMatch(match1);
+        match1Result.setResult("1-0");
+
+        MatchResult match2Result = new MatchResult();
+        match2Result.setMatch(match2);
+        match2Result.setResult("1-0");
+
+
+        betSystemService = new BetSystemServiceImpl(scoreCalculatorService, extractScoreService);
+        betSystemService.calculate(match1Result);
+    }
+
+    private static List<Bettor> getBettors() {
+        Bettor bettorA = new Bettor(1,"Ricardo");
+        Bettor bettorB = new Bettor(2,"Marcelo");
+        Bettor bettorC = new Bettor(3,"Antonio");
+        Bettor bettorD = new Bettor(4,"Braulio");
 
         List<Bettor> bettors = new ArrayList<>();
         bettors.add(bettorA);
         bettors.add(bettorB);
         bettors.add(bettorC);
         bettors.add(bettorD);
-
-
-        Team corinthians = new Team(TeamEnum.CORINTHIANS);
-        Team flamengo = new Team(TeamEnum.FLAMENGO);
-        List<Team> teams = new ArrayList<>();
-        teams.add(corinthians);
-        teams.add(flamengo);
-
-
-        Match match = new Match();
-        match.setDate(LocalDateTime.of(2023, 4, 16, 16, 0));
-        match.setMatchStatus(MatchStatus.OPEN);
-        match.setTeams(teams);
-        match.setBettors(bettors);
-
-        MatchResult matchResult = new MatchResult();
-        matchResult.setMatch(match);
-        matchResult.setResult("2-3");
-
-        betSystemService = new BetSystemServiceImpl(scoreCalculatorService, extractScoreService);
-        betSystemService.calculate(matchResult);
+        return bettors;
     }
 }
