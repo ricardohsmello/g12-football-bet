@@ -1,5 +1,6 @@
 package br.com.ricas;
 
+import br.com.ricas.application.web.GreetingResourceTest;
 import io.quarkus.test.junit.QuarkusIntegrationTest;
 
 @QuarkusIntegrationTest
