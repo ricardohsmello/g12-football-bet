@@ -3,17 +3,21 @@ package br.com.ricas.domain.model;
 import br.com.ricas.domain.util.MatchStatus;
 import br.com.ricas.infrastructure.entity.MatchEntity;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 public class Match {
      private int id;
-     private Team teamA;
-     private Team teamB;
+     Team teamA;
+     Team teamB;
 
-     private MatchStatus matchStatus;
-     private LocalDateTime date;
+     MatchStatus matchStatus;
+     LocalDate date;
 
-     public Match(int id) {
+    public Match() {
+    }
+
+    public Match(int id) {
          this.id = id;
      }
 
@@ -26,7 +30,7 @@ public class Match {
         this.matchStatus = matchStatus;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
@@ -34,5 +38,37 @@ public class Match {
         return new MatchEntity(
                 teamA.toEntity(), teamB.toEntity(), matchStatus.ordinal(), date
         );
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public Team getTeamA() {
+        return teamA;
+    }
+
+    public Team getTeamB() {
+        return teamB;
+    }
+
+    public MatchStatus getMatchStatus() {
+        return matchStatus;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setTeamA(Team teamA) {
+        this.teamA = teamA;
+    }
+
+    public void setTeamB(Team teamB) {
+        this.teamB = teamB;
     }
 }

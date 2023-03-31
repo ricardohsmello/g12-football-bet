@@ -5,17 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f53f1b-c584-4b53-aa01-59c2fc9ddf10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/TeamResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/MatchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/TeamService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/MatchServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/TeamServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/MatchEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/TeamEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/MatchRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/TeamRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/MatchResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/com/ricas/domain/MatchTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
@@ -24,17 +15,14 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/MyEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/GreetingResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/GreetingResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/Bettor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/Bettor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/TeamResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/TeamResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/Match.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/Match.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/BetSystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/BetSystemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/ScoreCalculatorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/ScoreCalculatorServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/util/TeamEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/util/TeamEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/MatchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/MatchServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/MatchEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/MatchEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/TeamEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/TeamEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/BetSystemServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/BetSystemServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +87,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/br/com/ricas/domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BetSystemServiceTest.shouldExecuteWithoutError">
+  <component name="RunManager" selected="JUnit.MatchTest.test">
     <configuration name="All in g12-football-bet.test (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="g12-football-bet.test" />
       <option name="PACKAGE_NAME" value="" />
@@ -148,28 +136,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScoreCalculatorServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MatchTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="g12-football-bet.test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.com.ricas.service.*" />
+          <option name="PATTERN" value="br.com.ricas.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.com.ricas.service" />
-      <option name="MAIN_CLASS_NAME" value="br.com.ricas.service.ScoreCalculatorServiceTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="br.com.ricas.domain" />
+      <option name="MAIN_CLASS_NAME" value="br.com.ricas.domain.MatchTest" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MatchTest.test" />
         <item itemvalue="JUnit.BetSystemServiceTest.shouldExecuteWithoutError" />
         <item itemvalue="JUnit.All in g12-football-bet.test (1)" />
         <item itemvalue="JUnit.All in g12-football-bet.test" />
         <item itemvalue="JUnit.ExtractScoreServiceTest.shouldExtractScoreSuccessfully" />
-        <item itemvalue="JUnit.ScoreCalculatorServiceTest" />
       </list>
     </recent_temporary>
   </component>

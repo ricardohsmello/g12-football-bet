@@ -6,8 +6,10 @@ import br.com.ricas.infrastructure.repository.MatchRepository;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 
 @ApplicationScoped
+@Transactional
 public class MatchServiceImpl implements MatchService {
 
     @Inject

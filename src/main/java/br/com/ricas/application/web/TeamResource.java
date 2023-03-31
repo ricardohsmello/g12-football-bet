@@ -19,12 +19,8 @@ public class TeamResource {
     @POST
     @Produces(MediaType.APPLICATION_JSON)
     public String create(Team team) {
-
-        System.out.println(team.getName());
-        System.out.println("teammm");
         teamService.create(team);
-
-        return "Created with successfully";
+        return "Team created with successfully";
     }
 
     @GET

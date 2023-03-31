@@ -16,6 +16,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
@@ -38,14 +39,14 @@ public class BetSystemServiceTest {
         List<Bettor> bettors = getBettors();
 
         Match match1 = new Match(1);
-        match1.setDate(LocalDateTime.of(2023, 4, 16, 16, 0));
+        match1.setDate(LocalDate.of(2023, 4, 16));
         match1.setMatchStatus(MatchStatus.OPEN);
-        match1.setMatchUp(new Team(TeamEnum.PALMEIRAS), new Team(TeamEnum.GREMIO));
+        match1.setMatchUp(new Team(TeamEnum.PALMEIRAS.name()), new Team(TeamEnum.GREMIO.name()));
 
         Match match2 = new Match(2);
-        match2.setDate(LocalDateTime.of(2023, 4, 16, 16, 0));
+        match1.setDate(LocalDate.of(2023, 4, 16));
         match2.setMatchStatus(MatchStatus.OPEN);
-        match2.setMatchUp(new Team(TeamEnum.CORINTHIANS), new Team(TeamEnum.FLAMENGO));
+        match2.setMatchUp(new Team(TeamEnum.CORINTHIANS.name()), new Team(TeamEnum.FLAMENGO.name()));
 
         MatchResult match1Result = new MatchResult();
         match1Result.setMatch(match1);
