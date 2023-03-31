@@ -1,4 +1,4 @@
-package br.com.ricas;
+package br.com.ricas.application.web;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
@@ -11,6 +11,6 @@ public class GreetingResource {
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
-        return "Hello from RESTEasy Reactive";
+        return "Hello from RESTEasy Reactive 2";
     }
 }

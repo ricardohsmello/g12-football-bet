@@ -10,7 +10,8 @@ public class ScoreCalculatorServiceImpl implements ScoreCalculatorService {
     @Override
     public int calculatePoints(int[] matchScores, int[] betScores) {
         if (matchScores[0] == betScores[0] && matchScores[1] == betScores[1]) {
-            return 10;
+            int totalGoalsOnTheMatch = matchScores[0] + matchScores[1];
+            return totalGoalsOnTheMatch >= 4 ? 11 : 10;
         } else {
             GameResultEnum matchResult = getGameResult(matchScores[0], matchScores[1]);
             GameResultEnum betResult = getGameResult(betScores[0], betScores[1]);
@@ -20,12 +21,7 @@ public class ScoreCalculatorServiceImpl implements ScoreCalculatorService {
 
     @Override
     public GameResultEnum getGameResult(int homeScore, int awayScore) {
-        if (homeScore > awayScore) {
-            return GameResultEnum.VICTORY;
-        } else if (homeScore < awayScore) {
-            return GameResultEnum.DEFEAT;
-        } else {
-            return GameResultEnum.DRAW;
-        }
+        return homeScore > awayScore ? GameResultEnum.VICTORY :
+                homeScore < awayScore ? GameResultEnum.DEFEAT : GameResultEnum.DRAW;
     }
 }
