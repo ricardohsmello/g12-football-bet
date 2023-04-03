@@ -13,6 +13,7 @@ public class
 TeamEntity extends PanacheEntityBase {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_team")
+    @JoinColumn(name = "team_id")
     Long id;
 
     String name;
