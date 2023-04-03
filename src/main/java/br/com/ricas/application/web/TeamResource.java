@@ -17,7 +17,7 @@ public class TeamResource {
     @Inject
     TeamService teamService;
     @POST
-    @Produces(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.TEXT_PLAIN)
     public String create(Team team) {
         teamService.create(team);
         return "Team created with successfully";
