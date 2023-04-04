@@ -1,9 +1,7 @@
 package br.com.ricas.domain.service;
 
-import br.com.ricas.domain.model.Bettor;
-
-import java.util.List;
+import br.com.ricas.domain.model.RoundMatch;
 
 public interface CalculateRoundService {
-    void calculate();
+    RoundMatch calculate(Long roundId);
 }
