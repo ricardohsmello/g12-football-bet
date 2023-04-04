@@ -1,6 +1,5 @@
 package br.com.ricas.domain.service.impl;
 
-import br.com.ricas.domain.model.Bettor;
 import br.com.ricas.domain.model.MatchResult;
 import br.com.ricas.domain.model.ScoreBoard;
 import br.com.ricas.domain.service.BetSystemService;
@@ -11,7 +10,6 @@ import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 @ApplicationScoped
 public class BetSystemServiceImpl implements BetSystemService {
