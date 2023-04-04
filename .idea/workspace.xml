@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f53f1b-c584-4b53-aa01-59c2fc9ddf10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/BettorResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/RoundMatchResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/RoundMatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/BettorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/CalculateRoundService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/RoundMatchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/BettorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/CalculateServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/RoundMatchServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/BettorEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/RoundMatchEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/BettorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/RoundMatchRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/BetResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/Bet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/BetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/BetServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/BetEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/BetRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
@@ -27,11 +20,10 @@
       <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/GreetingResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/CalculateRoundResource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/Bettor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/Bettor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/ScoreBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/ScoreBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/BetSystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/BetSystemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/BettorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/BettorEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/RoundMatchEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/RoundMatchEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/resources/index.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,9 +87,9 @@
       <recent name="$PROJECT_DIR$/src/main/java/br/com/ricas/domain" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="br.com.ricas.application.web" />
       <recent name="br.com.ricas.domain.service.impl" />
       <recent name="br.com.ricas.domain.service" />
-      <recent name="br.com.ricas.application.web" />
       <recent name="br.com.ricas.infrastructure.repository" />
       <recent name="br.com.ricas.infrastructure.entity" />
     </key>

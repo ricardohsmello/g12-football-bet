@@ -6,7 +6,6 @@ public class Bettor {
     private Long id;
     private String name;
 
-
     public Bettor(Long id, String name) {
         this.id = id;
         this.name = name;
@@ -23,6 +22,5 @@ public class Bettor {
     public BettorEntity toEntity() {
         return new BettorEntity(id, name);
     }
-
 
 }
