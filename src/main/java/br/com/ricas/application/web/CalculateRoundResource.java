@@ -5,12 +5,11 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-@Path("/hello")
-public class GreetingResource {
+@Path("/calculate")
+public class CalculateRoundResource {
 
     @GET
-    @Produces(MediaType.TEXT_PLAIN)
-    public String hello() {
+    public String calculate() {
         return "Hello from RESTEasy Reactive 2";
     }
 }
