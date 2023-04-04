@@ -1,5 +1,6 @@
 package br.com.ricas.infrastructure.entity;
 
+import br.com.ricas.domain.model.Bet;
 import br.com.ricas.domain.model.Bettor;
 import br.com.ricas.domain.model.Match;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
@@ -28,4 +29,5 @@ public class BettorEntity extends PanacheEntityBase {
 
     public BettorEntity() {
     }
+
 }
