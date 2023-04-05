@@ -17,6 +17,9 @@ public class RoundMatchServiceImpl implements RoundMatchService {
     @Inject
     RoundMatchRepository roundMatchRepository;
 
+    public RoundMatchServiceImpl() {
+    }
+
     @Override
     public void create(RoundMatch roundMatch) {
         roundMatchRepository.persist(roundMatch.toEntity());

@@ -4,13 +4,13 @@ import br.com.ricas.infrastructure.entity.RoundMatchEntity;
 
 public class RoundMatch {
 
-    private Long id;
+    private int id;
 
-    private Long round;
+    private int round;
 
     private Match match;
 
-    public RoundMatch(Long id, Long round, Match match) {
+    public RoundMatch(int id, int round, Match match) {
         this.id = id;
         this.round = round;
         this.match = match;
@@ -21,13 +21,7 @@ public class RoundMatch {
         return new RoundMatchEntity(id, round, match);
     }
 
-    public Long getId() {
-        return id;
-    }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public Match getMatch() {
         return match;
@@ -37,7 +31,12 @@ public class RoundMatch {
         this.match = match;
     }
 
-    public Long getRound() {
+
+    public int getRound() {
         return round;
+    }
+
+    public int getId() {
+        return id;
     }
 }

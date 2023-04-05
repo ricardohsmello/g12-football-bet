@@ -30,4 +30,6 @@ public class BettorEntity extends PanacheEntityBase {
     public BettorEntity() {
     }
 
+
+
 }
