@@ -12,9 +12,9 @@ public class RoundMatchEntity extends PanacheEntityBase {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @JoinColumn(name = "round_match_id")
-    Long id;
+    int id;
 
-    private Long round;
+    private int round;
 
     @ManyToOne(fetch = FetchType.EAGER, cascade=CascadeType.ALL, optional = false)
     @JoinColumn(name = "match_id", nullable = false)
@@ -24,7 +24,7 @@ public class RoundMatchEntity extends PanacheEntityBase {
         return new RoundMatch(id, round, match.toDomain());
     }
 
-    public RoundMatchEntity(Long id, Long round, Match match) {
+    public RoundMatchEntity(int id, int round, Match match) {
         this.id = id;
         this.round = round;
         this.match = match.toEntity();
