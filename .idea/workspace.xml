@@ -4,32 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0f53f1b-c584-4b53-aa01-59c2fc9ddf10" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/BetMatchResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/BetInfoView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.5.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/CalculateRoundResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/CalculateRoundResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/RoundMatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/model/RoundMatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/BetSystemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/BetSystemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/CalculateRoundService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/BetSystemServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/BetSystemServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/CalculateRoundServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/RoundMatchServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/domain/service/impl/RoundMatchServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/BettorEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/BettorEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/RoundMatchEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/entity/RoundMatchEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/BetRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/BetRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/RoundMatchRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/RoundMatchRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/BetSystemServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/BetSystemServiceTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="c0f53f1b-c584-4b53-aa01-59c2fc9ddf10" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
