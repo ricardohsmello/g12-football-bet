@@ -16,12 +16,9 @@ public class RoundMatch {
         this.match = match;
     }
 
-
     public RoundMatchEntity toEntity() {
         return new RoundMatchEntity(id, round, match);
     }
-
-
 
     public Match getMatch() {
         return match;

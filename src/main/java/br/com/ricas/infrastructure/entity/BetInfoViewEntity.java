@@ -1,12 +1,15 @@
 package br.com.ricas.infrastructure.entity;
 
+import br.com.ricas.domain.model.Match;
 import io.quarkus.hibernate.orm.panache.PanacheEntityBase;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-public class BetInfoView extends PanacheEntityBase {
+@Table(name = "bet_info_view_entity")
+
+public class BetInfoViewEntity extends PanacheEntityBase {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,7 +31,6 @@ public class BetInfoView extends PanacheEntityBase {
     @Column(name = "result")
     public String result;
 
-
     public String getBet() {
         return bet;
     }
@@ -41,13 +43,21 @@ public class BetInfoView extends PanacheEntityBase {
     @JoinColumn(name = "bettor_id",  nullable = false)
     public BettorEntity bettor;
 
+    @ManyToOne(fetch = FetchType.EAGER, cascade=CascadeType.ALL, optional = false)
+    @JoinColumn(name = "match_id",  nullable = false)
+    public MatchEntity match;
+
+    public MatchEntity getMatch() {
+        return match;
+    }
+
     public BettorEntity getBettor() {
         return bettor;
     }
 
     public static List findByRound(Integer round) {
         String sql =
-                "select be.id, rm.round, b.name as bettor, b.id as bettor_id, be.bet, home.name as home_team, visiting.name as visiting_team, mr.result " +
+                "select be.id, m.id as match_id, rm.round, b.name as bettor, b.id as bettor_id, be.bet, home.name as home_team, visiting.name as visiting_team, mr.result " +
                 "from bettor_entity b, bet_entity be, match_entity m, round_match_entity rm, " +
                 "team_entity home, team_entity visiting, " +
                 "match_result_entity mr " +
@@ -59,7 +69,7 @@ public class BetInfoView extends PanacheEntityBase {
                 "and rm.match_id = be.round_match_id " +
                 "and rm.round = ? ";
 
-        return getEntityManager().createNativeQuery(sql, BetInfoView.class)
+        return getEntityManager().createNativeQuery(sql, BetInfoViewEntity.class)
                 .setParameter(1, round).getResultList();
      }
 }
