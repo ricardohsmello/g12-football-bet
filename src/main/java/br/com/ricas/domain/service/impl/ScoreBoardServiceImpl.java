@@ -13,14 +13,13 @@ import java.util.List;
 @ApplicationScoped
 @Transactional
 public class ScoreBoardServiceImpl implements ScoreBoardService {
-
     @Inject
     ScoreBoardRepository scoreBoardRepository;
 
     @Override
     public void create(ScoreBoard scoreBoard) {
         scoreBoardRepository.persist(scoreBoard.toEntity());
-     }
+    }
 
     @Override
     public List<ScoreBoard> findAll() {
