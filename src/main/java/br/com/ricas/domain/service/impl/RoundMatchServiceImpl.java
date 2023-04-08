@@ -13,7 +13,6 @@ import java.util.List;
 @ApplicationScoped
 @Transactional
 public class RoundMatchServiceImpl implements RoundMatchService {
-
     @Inject
     RoundMatchRepository roundMatchRepository;
 

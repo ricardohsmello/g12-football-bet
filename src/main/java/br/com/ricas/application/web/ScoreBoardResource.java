@@ -10,6 +10,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Path("/score")
 public class ScoreBoardResource {
@@ -27,6 +28,14 @@ public class ScoreBoardResource {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     public List<ScoreBoard> findAll() {
-        return scoreBoardService.findAll();
+        var result = scoreBoardService.findAll();
+
+        result.stream()
+                .collect(Collectors.groupingBy(it -> it.getBettor().getName() +it.getBettor().getId(),
+                        Collectors.summingInt(ScoreBoard::getPoints)))
+                .forEach((name,sumTargetCost)->System.out.println(name+"\t"+sumTargetCost));
+
+
+        return result;
     }
 }

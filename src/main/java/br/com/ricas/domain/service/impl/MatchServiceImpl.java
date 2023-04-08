@@ -13,7 +13,6 @@ import java.util.List;
 @ApplicationScoped
 @Transactional
 public class MatchServiceImpl implements MatchService {
-
     @Inject
     MatchRepository matchRepository;
 
