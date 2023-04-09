@@ -13,7 +13,6 @@ import java.util.List;
 @ApplicationScoped
 @Transactional
 public class BettorServiceImpl implements BettorService {
-
     @Inject
     BettorRepository bettorRepository;
 
