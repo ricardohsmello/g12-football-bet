@@ -5,26 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c0f53f1b-c584-4b53-aa01-59c2fc9ddf10" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/response/ScoreBoardResponse.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/sidebar/sidebar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/domain/user-profile/team-list/team-list.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/domain/user-profile/team-list/team-list.component.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/domain/user-profile/team-list/team-list.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/domain/user-profile/team-list/team-list.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/domain/user-profile/user-profile.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/domain/user-profile/user-profile.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/domain/user-profile/user-profile.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/domain/user-profile/user-profile.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/layouts/admin-layout/admin-layout.routing.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/notifications/notifications.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/notifications/notifications.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/notifications/notifications.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/notifications/notifications.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/team-service/team-service.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/team-service/team-service.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/team-service/team.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/team-service/team.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/team.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/layouts/admin-layout/admin-layout.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/layouts/admin-layout/admin-layout.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/layouts/admin-layout/admin-layout.routing.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/layouts/admin-layout/admin-layout.routing.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/score-board/score-board.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/score-board/score-board.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/score-board/score-board.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/score-board/score-board.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/team-list/team-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/team-list/team-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/ScoreBoardResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/ricas/application/web/ScoreBoardResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

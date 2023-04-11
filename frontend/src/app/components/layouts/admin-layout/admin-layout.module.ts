@@ -8,7 +8,7 @@ import { NotificationsComponent } from '../../notifications/notifications.compon
 import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
-import { ScoreBoardComponent } from '../../score-board/score-board.component';
+import { ScoreBoardListComponent } from '../../score-board-list/score-board-list.component';
 import { TeamListComponent } from '../../team-list/team-list.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
  
@@ -26,7 +26,7 @@ import { UserProfileComponent } from '../../user-profile/user-profile.component'
     UserProfileComponent,
     NotificationsComponent,
     TeamListComponent,
-    ScoreBoardComponent
+    ScoreBoardListComponent
   ]
 })
 
