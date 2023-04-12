@@ -9,16 +9,27 @@ import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 import { ScoreBoardListComponent } from '../../score-board-list/score-board-list.component';
-import { TeamListComponent } from '../../team-list/team-list.component';
+import { TeamListComponent } from '../../team/list/team-list.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
- 
+import { TeamAddComponent } from '../../team/add/team-add.component';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { MatDialog, MatDialogModule, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatButtonModule } from '@angular/material/button';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 @NgModule({
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     CommonModule,
     RouterModule.forChild(AdminLayoutRoutes),
     FormsModule,
     ChartsModule,
     NgbModule,
+    MatFormFieldModule,
+    MatButtonModule,
+    MatDialogModule,
+    FormsModule,
+
     ToastrModule.forRoot()
   ],
   declarations: [
@@ -26,8 +37,12 @@ import { UserProfileComponent } from '../../user-profile/user-profile.component'
     UserProfileComponent,
     NotificationsComponent,
     TeamListComponent,
-    ScoreBoardListComponent
-  ]
+    ScoreBoardListComponent,
+    TeamAddComponent,
+  ],
+  entryComponents: [TeamAddComponent],
+  providers: [MatDialog]
+
 })
 
 export class AdminLayoutModule {}

@@ -4,7 +4,7 @@ import { DashboardComponent } from '../../dashboard/dashboard.component';
 import { UserProfileComponent } from '../../user-profile/user-profile.component';
 import { NotificationsComponent } from '../../notifications/notifications.component';
 import { ScoreBoardListComponent } from '../../score-board-list/score-board-list.component';
-import { TeamListComponent } from '../../team-list/team-list.component';
+import { TeamListComponent } from '../../team/list/team-list.component';
 
 
 export const AdminLayoutRoutes: Routes = [

@@ -18,7 +18,7 @@ export class TeamService {
     return this.http.get<Team[]>(this.teamUrl);
   }
 
-  // public save(user: User) {
-  //   return this.http.post<User>(this.usersUrl, user);
-  // }
+  public save(team: Team) {
+    return this.http.post<Team>(this.teamUrl, team);
+  }
 }

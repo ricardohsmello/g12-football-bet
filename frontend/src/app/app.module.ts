@@ -41,7 +41,7 @@ export function initializeKeycloak(keycloak: KeycloakService) {
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent,
+    AdminLayoutComponent
   ],
   providers: [
     {
