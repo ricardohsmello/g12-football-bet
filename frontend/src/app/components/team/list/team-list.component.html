@@ -1,4 +1,4 @@
-<div class="panel-header panel-header-lg">
+<!-- <div class="panel-header panel-header-lg">
     <div class="header text-center">
     </div>
 </div>
@@ -11,16 +11,13 @@
             <div class="card  card-tasks">
                 <div class="card-header ">
                     <h4 class="card-title">
-                        Clubs in the championship
+                        
                         <p class="category">Total 4</p>
                     </h4>
 
                     <div *ngIf="hasAdminRole">
                         <div class="col-md-4">
-                            <button mat-button (click)="add()">Add Item</button>
-
-                            <button class="btn btn-primary btn-block" (click)="add()">New team</button>
-                        </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -51,4 +48,44 @@
             </div>
         </div>
     </div>
+ 
+     
+</div> -->
+
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">Clubs in the championship</h4>
+        </div>
+          <button mat-button class="orange-button" (click)="add()">New Team</button>
+
+          <div class="card-body">
+            <div class="table-responsive">
+
+
+                <table class="table table-striped">
+        
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                        </tr>
+                    </thead>
+              <tbody>
+                <tr *ngFor="let team of teams">
+                    <td class="text-left">{{ team.id }}</td>
+                    <td class="text-left">{{ team.name }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+     
+   </div>
 </div>
