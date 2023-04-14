@@ -16,6 +16,9 @@ import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MatDialog, MatDialogModule, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatchAddComponent } from '../../match/add/match-add.component';
+import { MaterialExampleModule } from '../../../../material.module';
+import { MatchListComponent } from '../../match/list/match-list/match-list.component';
 
 @NgModule({
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
@@ -28,8 +31,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatFormFieldModule,
     MatButtonModule,
     MatDialogModule,
-    FormsModule,
-
+    ReactiveFormsModule,
+    MaterialExampleModule,
     ToastrModule.forRoot()
   ],
   declarations: [
@@ -37,8 +40,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     UserProfileComponent,
     NotificationsComponent,
     TeamListComponent,
-    ScoreBoardListComponent,
     TeamAddComponent,
+    ScoreBoardListComponent,
+    MatchAddComponent,
+    MatchListComponent
   ],
   entryComponents: [TeamAddComponent],
   providers: [MatDialog]

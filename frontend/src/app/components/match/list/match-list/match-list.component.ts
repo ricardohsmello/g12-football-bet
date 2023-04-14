@@ -1,22 +1,24 @@
+
 import { Component, OnInit } from '@angular/core';
-import { TeamService } from '../../../services/team-service/team-service.service';
-import { Team } from '../../../domain/model/team';
+
 import { KeycloakService } from 'keycloak-angular';
 import { MatDialog } from '@angular/material/dialog';
-import { TeamAddComponent } from '../add/team-add.component';
+import { Match } from '../../../../domain/model/match/match';
+import { MatchService } from '../../../../services/match-service/match.service';
+import { MatchAddComponent } from '../../add/match-add.component';
  
 
 @Component({
-  selector: 'app-team-list',
-  templateUrl: './team-list.component.html',
-  styleUrls: ['./team-list.component.scss']
+  selector: 'app-match-list',
+  templateUrl: './match-list.component.html',
+  styleUrls: ['./match-list.component.scss']
 })
-export class TeamListComponent implements OnInit {
+export class MatchListComponent implements OnInit {
 
-  teams: Team[];
+  matchs: Match[];
 
   constructor(
-    private teamService: TeamService,
+    private matchService: MatchService,
     private readonly keycloak: KeycloakService,
     public dialog: MatDialog) {
   }
@@ -27,20 +29,20 @@ export class TeamListComponent implements OnInit {
   async ngOnInit() {
     this.hasAdminRole = this.keycloak.getUserRoles().includes('admin');
 
-    this.teamService.findAll().subscribe(data => {
+    this.matchService.findAll().subscribe(data => {
       console.log(data)
-      this.teams = data;
+      this.matchs = data;
     });
   }
 
   public add() {
 
-    const dialogRef = this.dialog.open(TeamAddComponent, {
+    const dialogRef = this.dialog.open(MatchAddComponent, {
       data: { name: this.name },
     })
 
     dialogRef.afterClosed().subscribe(async result => {      
-      (await this.teamService.save(result)).subscribe( result =>
+      (await this.matchService.save(result)).subscribe( result =>
         console.log('aqui')
         );      
     }    

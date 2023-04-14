@@ -10,7 +10,8 @@ import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './components/layouts/admin-layout/admin-layout.component';
- 
+import {MaterialExampleModule} from '../material.module';
+
 export function initializeKeycloak(keycloak: KeycloakService) {
   return () =>
   keycloak.init({
@@ -37,11 +38,13 @@ export function initializeKeycloak(keycloak: KeycloakService) {
     AppRoutingModule,
     NgbModule,
     KeycloakAngularModule,
+    MaterialExampleModule,
     ToastrModule.forRoot()
   ],
   declarations: [
     AppComponent,
-    AdminLayoutComponent
+    AdminLayoutComponent,
+    
   ],
   providers: [
     {
