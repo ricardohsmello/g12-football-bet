@@ -44,9 +44,17 @@
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.ow2.asm/asm/9.4/b4e0e2d2e023aa317b7cfcfc916377ea348e07d1/asm-9.4.jar" />
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.reactivestreams/reactive-streams/1.0.4/3864a1320d97d7b045f729a326e1e077661f31b7/reactive-streams-1.0.4.jar" />
         </processorPath>
-        <module name="br.com.ricas.g12-football-bet.main" />
+        <module name="projects.g12-football-bet.main" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="17" />
+    <bytecodeTargetLevel target="17">
+      <module name="br.com.ricas.g12-football-bet" target="11" />
+      <module name="br.com.ricas.g12-football-bet.integrationTest" target="11" />
+      <module name="br.com.ricas.g12-football-bet.main" target="11" />
+      <module name="br.com.ricas.g12-football-bet.native-test" target="11" />
+      <module name="br.com.ricas.g12-football-bet.quarkus-generated-sources" target="11" />
+      <module name="br.com.ricas.g12-football-bet.quarkus-test-generated-sources" target="11" />
+      <module name="br.com.ricas.g12-football-bet.test" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
