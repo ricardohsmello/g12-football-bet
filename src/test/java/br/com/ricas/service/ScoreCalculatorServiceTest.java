@@ -1,7 +1,8 @@
 package br.com.ricas.service;
 
-import br.com.ricas.domain.service.impl.ScoreCalculatorServiceImpl;
-import br.com.ricas.domain.util.GameResultEnum;
+
+import domain.service.impl.ScoreCalculatorServiceImpl;
+import domain.util.GameResultEnum;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 

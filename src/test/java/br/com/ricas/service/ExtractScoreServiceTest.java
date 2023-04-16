@@ -1,7 +1,7 @@
 package br.com.ricas.service;
 
-import br.com.ricas.domain.service.impl.ExtractScoreServiceImpl;
-import org.junit.jupiter.api.Test;
+ import domain.service.impl.ExtractScoreServiceImpl;
+ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -25,7 +25,6 @@ dependencies {
     testImplementation("io.rest-assured:rest-assured")
 }
 
-group = "br.com.ricas"
 version = "1.0.0-SNAPSHOT"
 
 java {
