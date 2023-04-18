@@ -76,6 +76,9 @@
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/RoundMatchRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/ScoreBoardRepository.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/ricas/infrastructure/repository/TeamRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/BetSystemServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/BetSystemServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/ExtractScoreServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/ExtractScoreServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/ScoreCalculatorServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/com/ricas/service/ScoreCalculatorServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
