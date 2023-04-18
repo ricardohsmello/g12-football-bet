@@ -47,4 +47,12 @@ public class MatchResponse {
     public void setStatus(String status) {
         this.status = status;
     }
+
+    public MatchResponse(String id, String teamA, String teamB, String date, String status){
+        this.id = id;
+        this.teamA = teamA;
+        this.teamB = teamB;
+        this.date = date;
+        this.status = status;
+    }
 }

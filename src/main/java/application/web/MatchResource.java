@@ -1,5 +1,7 @@
 package application.web;
 
+import application.web.response.MatchResponse;
+import application.web.response.ScoreBoardResponse;
 import domain.model.Match;
 import domain.service.MatchService;
 
@@ -10,6 +12,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Path("/match")
 public class MatchResource {
@@ -29,4 +32,16 @@ public class MatchResource {
 
         return matchService.findAll();
     }
-}
+
+    @GET
+    @Path("/table")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<MatchResponse> findMatchTable() {
+
+        return matchService.findAll().stream().map(
+                entry -> new MatchResponse(entry.getId().toString(), entry.getTeamA().getName(), entry.getTeamB().getName(),
+                        entry.getDate().toString(), entry.getMatchStatus().name()))
+                .collect(Collectors.toList());
+
+//        return matchService.findAll();
+    }}

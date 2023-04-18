@@ -5,7 +5,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Clubs in the championship</h4>
+                    <h4 class="card-title">Game match</h4>
                 </div>
                  <div *ngIf="hasAdminRole">
                     <button mat-button class="orange-button" (click)="add()">New Match</button>
@@ -26,22 +26,14 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td class="text-left">1</td>
-                                    <td class="text-left">16/04/2023</td>
-                                    <td class="text-left">Corinthians</td>
-                                    <td class="text-left">Cruzeiro</td>
-                                    <td class="text-left">Open</td>
-
-                                </tr>
-                                <!-- <tr *ngFor="let match of matchs">
+                                <tr *ngFor="let match of matchs">
                                     <td class="text-left">{{ match.id }}</td>
-                                    <td class="text-left">{{ team.date }}</td>
-                                    <td class="text-left">{{ team.teamA }}</td>
-                                    <td class="text-left">x</td>
-                                    <td class="text-left">{{ team.teamB }}</td>
-                                </tr> -->
-                            </tbody>
+                                    <td class="text-left">{{ match.date }}</td>
+                                    <td class="text-left">{{ match.teamA }}</td>
+                                    <td class="text-left">{{ match.teamB }}</td>   
+                                    <td class="text-left">{{ match.status }}</td>
+                                </tr>
+                             </tbody>
                         </table>
                     </div>
                 </div>
