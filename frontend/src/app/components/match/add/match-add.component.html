@@ -6,8 +6,6 @@
         <mat-select formControlName="firstCtrl" required>
           <mat-option *ngFor="let team of teams" [value]="team.name">{{team.name}}</mat-option>
         </mat-select>
-
-
       </mat-form-field>
       <div>
         <button mat-button matStepperNext>Next</button>
@@ -21,7 +19,6 @@
         <mat-select formControlName="secondCtrl" required>
           <mat-option *ngFor="let team of teams" [value]="team.name">{{team.name}}</mat-option>
         </mat-select>
-
       </mat-form-field>
       <div>
         <button mat-button matStepperPrevious>Back</button>
@@ -31,7 +28,6 @@
   </mat-step>
   <mat-step [stepControl]="thirdFormGroup" label="Match date">
     <form [formGroup]="thirdFormGroup">
-
       <mat-form-field>
         <mat-label>Choose a date</mat-label>
         <input matInput [matDatepicker]="picker" formControlName="thirdCtrl" required>
@@ -47,7 +43,6 @@
   </mat-step>
   <mat-step>
     <ng-template matStepLabel>Done</ng-template>
-
     <p><b>{{thirdFormGroup.value.thirdCtrl}}</b></p>
     <p>{{firstFormGroup.value.firstCtrl}} vs {{secondFormGroup.value.secondCtrl}}</p> 
     <div>
