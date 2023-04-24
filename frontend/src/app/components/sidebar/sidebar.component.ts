@@ -15,7 +15,6 @@ export const ROUTES: RouteInfo[] = [
 ];
 
 
-
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
