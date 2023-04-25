@@ -2,11 +2,9 @@ import { NgModule } from '@angular/core';
 import { CommonModule, } from '@angular/common';
 import { BrowserModule  } from '@angular/platform-browser';
 import { Routes, RouterModule } from '@angular/router';
-
 import { AdminLayoutComponent } from './components/layouts/admin-layout/admin-layout.component';
 
 const routes: Routes =[
-
   {
     path: '',
     redirectTo: 'dashboard',
