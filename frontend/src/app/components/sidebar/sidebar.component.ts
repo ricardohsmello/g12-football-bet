@@ -14,7 +14,6 @@ export const ROUTES: RouteInfo[] = [
     { path: '/scoreboard', title: 'Score Board',  icon:'sport_trophy', class: '' }
 ];
 
-
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
