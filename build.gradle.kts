@@ -23,7 +23,6 @@ dependencies {
     testImplementation("io.quarkus:quarkus-junit5")
     testImplementation("io.rest-assured:rest-assured")
 }
-
 version = "1.0.0-SNAPSHOT"
 
 java {
