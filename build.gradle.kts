@@ -2,7 +2,6 @@ plugins {
     java
     id("io.quarkus")
 }
-
 repositories {
     mavenCentral()
     mavenLocal()
