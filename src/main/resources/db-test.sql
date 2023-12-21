@@ -24,7 +24,6 @@ insert into match_result_entity values (2, '1-0', 2);
 insert into round_match_entity values (1, 1, 1);
 insert into round_match_entity values (2, 1, 2);
 
-
 insert into bet_entity values(1, '1-0', 1, 1);
 insert into bet_entity values(2, '1-2', 2, 1);
 insert into bet_entity values(3, '2-2', 3, 1);
